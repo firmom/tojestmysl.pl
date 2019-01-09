@@ -1,0 +1,24 @@
+{
+  "lang.pl.layout": {
+    "footer": {
+      "title": "ToJestMysl",
+      "signup": "Rejestracja",
+      "signin": "Logowanie",
+      "signout": "Wylogowanie"
+    },
+    "head_title": "ToJestMysl",
+    "navbar": {
+      "home": "ToJestMysl",
+    },
+    "menu": {
+      "home": "Strona główna",
+      "game": "Gra",
+      "about": "O grze",
+      "team": "Zespół",
+      "join": "Dołącz do nas",
+      "opensource": "Open Source",
+      "download": "Pobierz",
+      "rules": "Zasady"
+    }
+  }
+}

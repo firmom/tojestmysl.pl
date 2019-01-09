@@ -1,0 +1,343 @@
+@import "footer";
+
+html, body, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  font-family: Arial;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+h1.logo {
+  font-size: 44px;
+  font-weight: 700;
+  color: gold;
+  text-shadow: black 0.001em 0.001em 0.001em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: gold;
+  text-shadow: black 0.01em 0.01em 0.01em;
+  text-align: center;
+}
+
+p {
+  color: #000;
+  text-align: justify;
+  margin: 0 20% 0 20%;
+}
+
+#infographics {
+  width: 33%;
+  min-width: 750px;
+  margin: auto;
+  padding: 20px 0;
+  text-align: center;
+  background-position: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+  #infographics>* {
+    width: 100%;
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #go {
+    text-align: center;
+    background-position: center;
+    margin-left: 46%;
+    margin-top: 13%;
+  }
+  #bri {
+    width: 300px;
+    height: 300px;
+  }
+  #goi {
+    width: 105px;
+    height: 105px;
+  }
+}
+
+#infographics>* {
+  width: 33%;
+  margin: 20px;
+  float: left;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  background-position: center;
+}
+
+#infographics:hover>* {}
+
+#our-player>*, #developer>*, #patron>* {
+  text-align: center;
+  display: inline-block;
+}
+
+#our-player:hover>*, #developer:hover>*, #patron:hover>* {
+  display: inline-block;
+}
+
+#our-player p, #developer p, #patron p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#our-player:hover, #developer:hover, #patron:hover {
+  background: gold;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #000;
+  animation-timing-function: linear;
+  cursor: pointer;
+  opacity: 1;
+  transition-duration: 0.7s;
+  animation-timing-function: linear;
+  cursor: pointer;
+}
+
+.swing:hover .picture {
+  transform: rotate(40deg);
+  transition-duration: 0.7s;
+}
+
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#our-player {
+  width: 200px;
+  height: 300px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: gold;
+}
+
+#developer {
+  width: 200px;
+  height: 300px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: gold;
+}
+
+#patron {
+  width: 200px;
+  height: 300px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: gold;
+}
+
+.c {
+  clear: both;
+}
+
+#topnav {
+  text-align: center;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  font-size: 18px;
+  min-height: 38px;
+  line-height: 200%;
+}
+
+.menu>li {
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-right: 1px dashed #fff;
+}
+
+.menu>li:first-child {
+  border-left: 1px dashed #fff;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: gold;
+}
+
+#top-box {
+  background-color: black;
+  box-sizing: border-box;
+  width: 100%;
+  height: 400px;
+  margin: 0px 0% 0% 0%;
+  padding: 0%;
+  background-image: url('/static/image/background.png');
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#content-box {
+  min-height: 50;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.fa {
+  padding: 30px 20px 20px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  float: left;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  float: left;
+  text-align: center;
+}
+
+#scene {
+  width: 100vw;
+  height: 300px;
+}
+
+#br {
+  width: 100%;
+  height: 100%;
+  background-image: url('/static/image/gate.png');
+  background-size: 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#go {
+  width: 100%;
+  height: 100%;
+  background-image: url('/static/image/goat.png');
+  background-size: 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#bri {
+  width: 500px;
+  height: 500px;
+}
+
+#goi {
+  width: 180px;
+  height: 180px;
+}
+.info {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  background-color: #ffffff;
+  position: center;
+  float: left;
+}
+.konteks {
+  width: 100vw;
+  height: 100vh;
+  text-align: left;
+  font-family: 'Montserrat', 'sans-serif';
+  font-size: 20pt;
+}
+
+@font-face {
+  font-family: 'Montserrat', 'sans-serif';
+}
+
+@media screen and (max-width: 768px){
+  #our-player,#developer,#patron {
+    width: 90%;
+  }
+  #infographics {
+    width: 100%;
+    min-width: initial;
+  }
+  p {
+    margin:0% 5% 0% 5%;
+  }
+  #br,#go {
+    background-image:none;
+  }
+
+  .menu>li:first-child {
+    border-left: 0px;
+  }
+
+  .menu>li {
+    display: inline-block;
+    padding-left: 35%;
+    padding-right: 35%;
+    border-right: 0px;
+  }
+  #top-box {
+    background-size: 150%;
+    background-image: url('/static/image/gg.png');
+  }
+
+  .menu a:hover {
+    border-style:solid;
+    border-width: 2px;
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 720px){
+
+  #top-box {
+    background-size: 210%;
+  }
+}
+@media only screen and (max-width: 480px) {
+
+  #top-box {
+    background-size: 250%;
+  }
+}
+@media only screen and (max-width: 350px) {
+  #top-box {
+    background-size: 350%;
+    height: 340px;
+  }
+  .menu>li {
+    display: inline-block;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+.clear {
+  clear: both;
+}

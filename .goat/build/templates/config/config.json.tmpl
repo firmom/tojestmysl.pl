@@ -1,0 +1,64 @@
+{{- define "config" -}}
+{{- $ctx := .ctx -}}
+{{- $cached := .cached -}}
+{
+  "mailer": {
+    "smtp": {
+      "addr": "{{index $ctx.Properties.Secrets "smtp.address"}}",
+      "auth": {
+        "username": "{{index $ctx.Properties.Secrets "smtp.user"}}",
+        "password": "{{index $ctx.Properties.Secrets "smtp.password"}}",
+        "identity": "{{index $ctx.Properties.Secrets "smtp.identity"}}"
+      }
+    }
+  },
+  "translate": {
+    "langs": "{{join (keys $ctx.Data "lang.") ", "}}",
+    "default": "{{index $ctx.Properties.Project "app.lang.default"}}"
+  },
+  "router": {
+    "host": ":{{index $ctx.Properties.Project "app.port"}}",
+    {{- if eq (index $ctx.Properties.Secrets "router.security.mode") "HTTPS" }}
+    "security": {
+      "mode": "TLS",
+      "cert": "./data/certs/fullchain.pem",
+      "key": "./data/certs/privkey.pem"
+    }
+    {{- end }}
+    {{- if eq (index $ctx.Properties.Secrets "router.security.mode") "HTTP" }}
+    "security": {
+      "mode": "HTTP"
+    }
+    {{- end }}
+  },
+  {{- if eq (index $ctx.Properties.Secrets "database.engine") "sqlite" }}
+  "database": {
+    "engine": "sqlite3",
+    "url": "file:data/main.db"
+  },
+  {{- end }}
+  {{- if eq (index $ctx.Properties.Secrets "database.engine") "postgres" }}
+  "database": {
+    "engine": "postgres",
+    "url": "postgres://{{index $ctx.Properties.Secrets "database.username"}}:{{index $ctx.Properties.Secrets "database.password"}}@{{index $ctx.Properties.Secrets "database.host"}}/{{index $ctx.Properties.Secrets "database.name"}}?sslmode=disable"
+  },
+  {{- end }}
+  "app": {
+    "baseURL": "{{index $ctx.Properties.Secrets "app.baseURL"}}"
+  },
+  "oauth": {
+    "github": {
+      "app": "{{index $ctx.Properties.Secrets "oauth.github.app"}}",
+      "secret": "{{index $ctx.Properties.Secrets "oauth.github.secret"}}"
+    }
+  },
+  "template": {
+    "cached": "{{- if $cached -}}true{{- else -}}false{{- end -}}"
+  },
+  "menu": {
+    "OpenSourceLink": "{{index $ctx.Properties.Project "menu.OpenSourceLink"}}",
+    "GameLink": "{{index $ctx.Properties.Project "menu.GameLink"}}",
+    "DownloadLink": "{{index $ctx.Properties.Project "menu.DownloadLink"}}"
+  }
+}
+{{- end -}}

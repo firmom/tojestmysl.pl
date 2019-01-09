@@ -1,0 +1,24 @@
+{
+  "lang.en.layout": {
+    "footer": {
+      "title": "ToJestMysl",
+      "signup": "sign up",
+      "signin": "sign in",
+      "signout": "sign out"
+    },
+    "head_title": "GoatCMS",
+    "navbar": {
+      "home": "GoatCMS"
+    },
+    "menu": {
+      "home": "Home",
+      "game": "Game",
+      "about": "About",
+      "team": "Team",
+      "join": "Join us",
+      "opensource": "Open Source",
+      "download": "Download",
+      "rules": "Rules"
+    }
+  }
+}

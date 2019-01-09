@@ -1,0 +1,15 @@
+{{define "main_menu"}}
+{{$prefix:=(print .Lang ".layout.menu.")}}
+
+<ul class="menu">
+  <li><a href="/">{{TranslateFor "home" $prefix}}</a></li>
+  <li><a href="{{ .Data.GameLink }}">{{TranslateFor "game" $prefix}}</a></li>
+  <li> <a href="/#Games">{{TranslateFor "about" $prefix}}</a></li>
+  <li> <a href="/#Team">{{TranslateFor "team" $prefix}}</a></li>
+  <li> <a href="/#addTeam">{{TranslateFor "join" $prefix}}</a></li>
+  <li><a href="{{ .Data.OpenSourceLink }}">{{TranslateFor "opensource" $prefix}}</a></li>
+  <li><a href="{{ .Data.DownloadLink }}">{{TranslateFor "download" $prefix}}</a></li>
+  <li><a href="/rules">{{TranslateFor "rules" $prefix}}</a></li>
+</ul>
+
+{{end}}
