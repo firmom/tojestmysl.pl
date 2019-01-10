@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   cicd:
-    image: gameinpl/beerpoly-home
+    image: firmom/tojestmysl.pl
     networks:
       - nproxy
     restart: always
@@ -20,7 +20,7 @@ services:
       - "MENU_GAME_LINK=Insert_your_game_link"
       - "MENU_DOWNLOAD_LINK=Insert_your_donwload_link"
     volumes:
-      - "/dockerdata/gameinpl/beerpoly-home/data:/data"
+      - "/dockerdata/firmom/tojestmysl.pl/data:/data"
     expose:
       - 2078
 

@@ -3,8 +3,8 @@ package bphctrl
 import (
 	"html/template"
 
-	"github.com/gameinpl/beerpoly-home/modules/goatcms/cmsapp/services"
-	"github.com/gameinpl/beerpoly-home/modules/goatcms/cmsapp/services/requestdep"
+	"github.com/firmom/tojestmysl.pl/modules/goatcms/cmsapp/services"
+	"github.com/firmom/tojestmysl.pl/modules/goatcms/cmsapp/services/requestdep"
 	"github.com/goatcms/goatcore/app"
 	"github.com/goatcms/goatcore/dependency"
 	"github.com/goatcms/goatcore/goathtml"

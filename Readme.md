@@ -2,7 +2,7 @@
 It is a open source code of Beerpoly home page.
 ```
 cd $GOPATH/src/github.com/gameinpl
-git clone https://github.com/gameinpl/beerpoly-home.git
+git clone https://github.com/firmom/tojestmysl.pl.git
 cd beerpoly-home
 goatcli build
 go run ./main run

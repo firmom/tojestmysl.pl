@@ -8,18 +8,18 @@
     "controllers.restctrl": "y"
   },
   "app": {
-    "id": "BeerpolyHome",
+    "id": "ToJestMysl",
     "baseURL": "http://localhost:555",
     "lang": {
       "default": "en"
     },
-    "name": "Beerpoly",
+    "name": "ToJestMysl",
     "port": "2078"
   },
   "menu": {
-    "OpenSourceLink": "https://github.com/gameinpl",
+    "OpenSourceLink": "https://github.com/firmom",
     "GameLink": "http://cicd.firmom.com:2077/",
-    "DownloadLink": "http://cicd.firmom.com:2079/gameinpl/beerpoly/"
+    "DownloadLink": "http://cicd.firmom.com:2079/firmom/tojestmysl.pl/"
   },
-  "goatcms_package": "github.com/gameinpl/beerpoly-home/modules/goatcms"
+  "goatcms_package": "github.com/firmom/tojestmysl.pl/modules/goatcms"
 }

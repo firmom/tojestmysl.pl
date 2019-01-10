@@ -1,7 +1,7 @@
 package bphctrl
 
 import (
-	"github.com/gameinpl/beerpoly-home/modules/goatcms/cmsapp/services"
+	"github.com/firmom/tojestmysl.pl/modules/goatcms/cmsapp/services"
 	"github.com/goatcms/goatcore/app"
 )
 

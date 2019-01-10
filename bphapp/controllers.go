@@ -1,7 +1,7 @@
 package bphapp
 
 import (
-	"github.com/gameinpl/beerpoly-home/bphapp/controllers/bphctrl"
+	"github.com/firmom/tojestmysl.pl/bphapp/controllers/bphctrl"
 	"github.com/goatcms/goatcore/app"
 )
 

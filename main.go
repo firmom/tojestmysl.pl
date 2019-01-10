@@ -4,8 +4,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/gameinpl/beerpoly-home/bphapp"
-	"github.com/gameinpl/beerpoly-home/modules/goatcms/cmsapp"
+	"github.com/firmom/tojestmysl.pl/bphapp"
+	"github.com/firmom/tojestmysl.pl/modules/goatcms/cmsapp"
 	"github.com/goatcms/goatcore/app/bootstrap"
 	"github.com/goatcms/goatcore/app/goatapp"
 	"github.com/goatcms/goatcore/app/modules/terminal"
